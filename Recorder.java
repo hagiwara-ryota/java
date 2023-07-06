@@ -2,11 +2,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Recorder {
-
     private Map<String, String> map = new HashMap<String, String>();
 
     public void put(String key, String value) {
-
         map.put(key, value);
         System.out.println(key + "=" + value);
     }
@@ -14,8 +12,7 @@ public class Recorder {
     public void get(String key) {
         if (!map.containsKey(key)) {
             throw new IllegalArgumentException();
-        }    
-        
+        }
         System.out.println(map.get(key));
     }
 
@@ -28,8 +25,7 @@ public class Recorder {
     }
 
     public void delete() {
-		map.clear();
-		System.out.println("deleted all");
-    }    
+        map.clear();
+        System.out.println("deleted all");
+    }
 }
-
